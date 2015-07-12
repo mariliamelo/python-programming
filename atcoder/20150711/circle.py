@@ -7,13 +7,10 @@ numbers = []
 
 ratios = total
 while ratios > 0:
-    numbers.append(raw_input())
+    numbers.append(int(raw_input()))
     ratios -= 1
 
-def reverse_numeric(x,y):
-    return int(x) - int(y)
-
-numbers.sort(cmp=reverse_numeric)
+numbers.sort()
 
 signal = 'tasu'
 area = 0
